@@ -70,6 +70,21 @@ footer {
     background-color: #222;
     color: #ccc;
 }
+.footer-items {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.gh-link a i {
+    margin: 6px;
+    padding: 4px;
+    color: #ccc;
+    font-size: 110%;
+    transition: color .5s;
+}
+.gh-link a i:hover {
+    color: #fff;
+}
 
 @media (max-width:750px) {
     .container {
