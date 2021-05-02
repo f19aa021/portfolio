@@ -22,53 +22,52 @@
         <div class="container">
             <div class="name">
                 <h2>名前</h2>
-                <p>山本 健太郎</p>
+                <div class="content">
+                    <p>山本 健太郎</p>
+                    <p>kentaro yamamoto</p>
+                </div>
             </div>
             <div class="school">
                 <h2>学校</h2>
-                <p>中央情報大学校 高度ICTデザイン学科 Webディレクション専攻 ３年</p>
+                <div class="content">
+                    <p>中央情報大学校 高度ICTデザイン学科 Webディレクション専攻 3年</p>
+                    <a href="https://chuo.ac.jp/cid/" target="_blank">https://chuo.ac.jp/cid/</a>
+                </div>
             </div>
             <div class="qualification">
                 <h2>所持資格</h2>
-                <ul>
-                    <li>経済産業省 基本情報技術者試験　合格</li>
-                    <li>経済産業省 応用情報技術者試験　合格</li>
-                    <li>サーティファイ 情報処理技術者能力認定試験　２級</li>
-                    <li>日本オラクル社 Oracle Certified Java Programmer Bronze SE 7/8　合格</li>
-                    <li>サーティファイ Javaプログラミング能力認定試験　２級</li>
-                    <li>ウェブデザイン技能検定 ３級</li>
-                    <li>全国経理教育協会 社会人常識マナー検定　３級</li>
-                </ul>
+                <div class="content">
+                    <ul>
+                        <li>一般財団法人 職業教育・キャリア教育財団 情報活用試験 1級</li>
+                        <li>サーティファイ 情報処理技術者能力認定試験 3級</li>
+                        <li>サーティファイ 情報処理技術者能力認定試験 2級1部</li>
+                        <li>サーティファイ 情報処理技術者能力認定試験 2級2部</li>
+                        <li>経済産業省 基本情報技術者試験 合格</li>
+                        <li>日本オラクル社 Oracle Certified Java Programmer Bronze SE 7/8 合格</li>
+                        <li>サーティファイ Javaプログラミング能力認定試験 3級</li>
+                        <li>サーティファイ Javaプログラミング能力認定試験 2級</li>
+                        <li>3級ウェブデザイン技能士</li>
+                        <li>全国経理教育協会 社会人常識マナー検定 3級</li>
+                        <li>経済産業省 応用情報技術者試験 合格</li>
+                        <li>サーティファイ 実践プログラミング技術者試験 Java部門 Platinum</li>
+                    </ul>
+                </div>
             </div>
             <div class="skills">
                 <h2>使える言語、技術</h2>
-                <div class="skill">
-                    <h3>フロントエンド</h3>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>react</li>
-                        <li>webpack</li>
-                        <li>babel</li>
-                        <li>html</li>
-                        <li>css</li>
-                    </ul>
-                </div>
-                <div class="skill">
-                    <h3>バックエンド</h3>
-                    <ul>
-                        <li>python</li>
-                        <li>pandas</li>
-                        <li>sql</li>
-                        <li>java</li>
-                    </ul>
-                </div>
-                <div class="skill">
-                    <h3>その他</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        <li>Slack</li>
-                    </ul>
+                <div class="content">
+                    <div class="skill">
+                        <h3>フロントエンド</h3>
+                        <canvas id="frontSkillChart" height="240px" width="800px"></canvas>
+                    </div>
+                    <div class="skill">
+                        <h3>バックエンド</h3>
+                        <canvas id="backSkillChart" height="300px" width="800px"></canvas>
+                    </div>
+                    <div class="skill">
+                        <h3>その他</h3>
+                        <canvas id="otherSkillChart" height="240px" width="800px"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,5 +86,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

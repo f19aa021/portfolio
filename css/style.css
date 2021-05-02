@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* 共通 */
 * {
     box-sizing: border-box;
 }
@@ -27,6 +28,7 @@ header {
     height: 60px;
     width: 100%;
     background-color: #ddd;
+    z-index: 9999;
 }
 header nav {
     display: flex;
@@ -59,9 +61,6 @@ main {
     margin-top: 60px;
     padding: 20px 0;
 }
-.qualification ul {
-    padding-left: 26px;
-}
 footer {
     display: flex;
     align-items: center;
@@ -80,14 +79,95 @@ footer {
     padding: 4px;
     color: #ccc;
     font-size: 110%;
-    transition: color .5s;
 }
 .gh-link a i:hover {
+    transition: color .5s;
     color: #fff;
+}
+
+/* about */
+.content {
+    margin: 0 5px;
+}
+.school a {
+    color: #006;
+}
+.school a:hover {
+    transition: 0.5s;
+    opacity: 0.7;
+}
+.qualification ul {
+    padding-left: 16px;
+}
+.qualification ul li {
+    margin-bottom: 10px;
+}
+.skill > h3 {
+    padding-top: 10px;
+}
+
+/* works */
+.works {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 80px;
+}
+.work {
+    width: 100%;
+    position: relative;
+}
+.work:not(:last-child) {
+    margin-bottom: 4px;
+}
+.work-title img,video {
+    width: 100%;
+}
+.work-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 99%;
+    width: inherit;
+    background-color: #222;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: opacity 1s;
+}
+.work-cover:hover {
+    opacity: 0.8;
+}
+.work-name {
+    position: absolute;
+    color: #e0e0e0;
+    height: 99%;
+    width: inherit;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work-name > h3 {
+    font-family: monospace;
+    font-size: 3em;
+    font-weight: lighter;
+    letter-spacing: 12px;
+    z-index: 10;
+}
+.work-name > h3::selection {
+    color: #333;
 }
 
 @media (max-width:750px) {
     .container {
         margin: 0 10px;
+    }
+    .works {
+        margin: 0;
+    }
+    .work-name > h3 {
+        font-size: 1.8em;
+        letter-spacing: 10px;
     }
 }
