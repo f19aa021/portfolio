@@ -18,7 +18,7 @@ const frontSkillChart = new Chart(fsc, {
               "rgba(47, 116, 192, 0.9)",
           ],
           borderWidth: 2,
-          data: [75, 75, 50, 15]
+          data: [75, 75, 50, 30]
       }]
     },
     options: {
