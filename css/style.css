@@ -89,6 +89,9 @@ footer {
 .content {
     margin: 0 5px;
 }
+.about p {
+    margin: 3px 0;
+}
 .school a {
     transition: 0.5s;
 }
@@ -96,13 +99,19 @@ footer {
     opacity: 0.7;
 }
 .qualification ul {
-    padding-left: 16px;
+    padding-left: 18px;
 }
 .qualification ul li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .skill > h3 {
     padding-top: 10px;
+}
+.skill ul {
+    padding-left: 24px;
+}
+.skill ul li {
+    margin-bottom: 6px;
 }
 
 /* works */
@@ -206,9 +215,9 @@ footer {
     opacity: 1.0;
 }
 
-@media (max-width:750px) {
+@media (max-width:768px) {
     .container {
-        margin: 0 10px;
+        margin: 0 14px;
     }
     .works {
         margin: 0;
