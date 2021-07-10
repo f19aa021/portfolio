@@ -7,9 +7,10 @@
     <title>about - portfolio</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
-    <header>
+    <header class="bg-clear">
         <div class="container">
             <nav>
                 <li><a href="#" class=current>about</a></li>
@@ -18,6 +19,9 @@
             </nav>
         </div>
     </header>
+    <div id="top-cover">
+        <h1>kentaro yamamoto's portfolio</h1>
+    </div>
     <main>
         <div class="container">
             <div class="about">
@@ -25,7 +29,7 @@
                 <div class="content">
                     <p>こんにちは、山本健太郎という者です。</p>
                     <p>群馬県の高崎にある専門学校に通う23卒の学生です。</p>
-                    <p>小さいときから作ることが好きで、高校3年の末からプログラミングに嵌りました。</p>
+                    <p>小さいときから作ることが好きで、高校3年の末からプログラミングにハマりました。</p>
                     <p>そこから、情報系の専門学校に入学し、本格的に情報分野の勉強をはじめました。</p>
                     <p>そして、入学より半年で基本情報に合格、その1年後には応用情報に受かり着実に知識を蓄えてきました。</p>
                     <p>現在では、「多くの人に使いやすいwebアプリケーションを作る」という信条のもとにweb技術を勉強する日々です。</p>
@@ -35,14 +39,12 @@
                 <h2>名前</h2>
                 <div class="content">
                     <p>山本 健太郎</p>
-                    <p>kentaro yamamoto</p>
                 </div>
             </div>
             <div class="school">
                 <h2>学校</h2>
                 <div class="content">
-                    <p>中央情報大学校 高度ICTデザイン学科 Webディレクション専攻 3年（４年制の専門学校です）</p>
-                    <a href="https://chuo.ac.jp/cid/" target="_blank">https://chuo.ac.jp/cid/</a>
+                    <p>中央情報大学校 高度ICTデザイン学科 Webディレクション専攻 ３年（４年制の専門学校です）</p>
                 </div>
             </div>
             <div class="qualification">
@@ -83,16 +85,37 @@
                 <div class="skill">
                     <h3>言語</h3>
                     <ul>
-                        <li>java</li>
-                        <li>html/css</li>
+                        <li>html</li>
+                        <p>
+                            html5でセマンティックな記述ができる
+                        </p>
+                        <li>css</li>
+                        <p>
+                            flex, gridを理解している<br>
+                            簡単なcssアニメーションが使える
+                        </p>
                         <li>javascript</li>
-                        <li>typescript</li>
+                        <p>
+                            es2015の記法で書ける<br>
+                            Reactが使える<br>
+                            Node.jsが使える<br>
+                            競技プロフラミングで使える（学校内プログラミングコンテストにて100人中7位）
+                        </p>
+                        <li>java</li>
+                        <p>
+                            java関連の資格を保有し粗方構造を理解している<br>
+                            競技プロフラミングで使える（paizaAランク）
+                        </p>
                         <li>python</li>
-                        <li>php</li>
-                        <li>ruby(勉強中)</li>
+                        <p>
+                            python3系が使える<br>
+                            djangoを使用したことがある<br>
+                            ライブラリを用いてwebスクレイピング、表計算操作、グラフ作成ができる<br>
+                            競技プロフラミングで使える（paizaBランク）
+                        </p>
                     </ul>
                 </div>
-                <div class="skill">
+                <!-- <div class="skill">
                     <h3>フレームワーク、ライブラリ</h3>
                     <ul>
                         <li>React</li>
@@ -100,13 +123,13 @@
                         <li>laravel</li>
                         <li>rails(勉強中)</li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="skill">
                     <h3>ツール、その他</h3>
                     <ul>
-                        <li>Node.js</li>
+                        <!-- <li>Node.js</li> -->
                         <li>webpack</li>
-                        <li>aws</li>
+                        <li>aws ec2</li>
                         <li>git</li>
                         <li>github</li>
                         <li>slack</li>
@@ -130,7 +153,8 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script> -->
     <!-- <script src="./js/myChart.js"></script> -->
+    <script src="./js/script.js"></script>
 </body>
 </html>

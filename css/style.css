@@ -15,8 +15,16 @@ h2 {
     border-left: 5px solid #888;
     padding-left: 5px;
 }
+main li {
+   list-style: none;
+   background-color: #333; 
+   color: #eee;
+   padding: 7px;
+   border-radius: 4px;
+   font-size: 0.9rem;
+}
 .container {
-    margin: 0 200px;
+    margin: 0 120px;
 }
 header {
     font-family: futura;
@@ -29,6 +37,10 @@ header {
     width: 100%;
     background-color: #ddd;
     z-index: 9999;
+    transition: background-color 1.5s;
+}
+header.bg-clear {
+    background-color: rgba(0,0,0,.0);
 }
 header nav {
     display: flex;
@@ -46,6 +58,9 @@ header nav li a {
     border-radius: 2px;
     padding: 8px 14px;
     color: #333;
+}
+header.bg-clear nav li a {
+    color: #bbb;
 }
 header nav li a:hover {
     transition: 1s;
@@ -86,6 +101,37 @@ footer {
 }
 
 /* about */
+#top-cover {
+    position: relative;
+	height: 100vh;
+    background: url(../img/top-cover.jpg) center / cover;
+}
+#top-cover::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,.3);
+}
+#top-cover h1 {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 100%;
+	margin: 0;
+	padding: 0 6em;
+	color: #fff;
+	font-size: 1.2rem;
+	line-height: 1.4;
+    font-weight: 50;
+	font-family: futura, sans-serif;
+	letter-spacing: .1em;
+    /* filter: drop-shadow(1px 1px 4px rgba(32, 32, 32, 0.3)); */
+	transform: translateY(-50%);
+}
 .content {
     margin: 0 5px;
 }
@@ -111,7 +157,10 @@ footer {
     padding-left: 24px;
 }
 .skill ul li {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+}
+.skill ul p {
+    margin: 8px 0;
 }
 
 /* works */
@@ -163,32 +212,6 @@ footer {
     margin-left: 40px;
     letter-spacing: 5px;
 }
-.work-view {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    color: #e0e0e0;
-    transition: opacity 2s;
-}
-.view .work-view {
-    opacity: 1;
-    z-index: 100;
-}
-.work-view .description {
-    display: flex;
-    flex-direction: row;
-    margin-top: 120px;
-    margin-left: 40px;
-}
-.work-view .description .description-img img {
-    height: 300px;
-}
-.work-view .description .description-text {
-    margin: 0 24px;
-}
 .work-cover {
     position: absolute;
     top: 0;
@@ -200,24 +223,22 @@ footer {
     cursor: pointer;
     transition: opacity 1s;
 }
-
-/* テスト */
 .work-cover a {
     display: block;
     height: 100%;
     width: 100%;
 }
-
 .work-cover:hover {
     opacity: 0.8;
-}
-.view .work-cover {
-    opacity: 1.0;
 }
 
 @media (max-width:768px) {
     .container {
-        margin: 0 14px;
+        margin: 0 16px;
+    }
+    #top-cover h1 {
+        padding: 0 30px;
+        font-size: 2.3rem;
     }
     .works {
         margin: 0;
